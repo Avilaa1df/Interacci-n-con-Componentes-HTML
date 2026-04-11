@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+</head>
+<body>
+    <h1>Task-Manager</h1>
+    <p>Tareas creadas: <span id = 'contadorTareas'>0</span></p> <br>
+    <input type = "text" id = 'nombreTarea' placeholder ="Escribe el nombre de la tarea">
+    <select id = 'listaOpciones'>
+        <option value="sinCategoria">-categoria-</option>
+        <option value="trabajo">Trabajo 💼</option>
+        <option value="estudio">Estudio 📚</option>
+        <option value="personal">Personal 🏠</option>
+        <option value="urgente">Urgente 🔴</option>
+        <option value="otra">Otra...</option>
+    </select>
+    <button onclick="crearTarea()">Agregar Tarea</button><br> 
+    <br>
+
+    <div id = 'contenedorCategoriaOtra'>
+    </div>
+
+    <div id = 'contenedorMensajeErrorNombre'>
+    </div>
+
+    <div id = 'contenedorMensajeErrorCategoria'>
+    </div>
+
+    <div id = 'contenedor-tareas-creadas'>
+    </div>
+
+    
+
+
+    
+    
+    
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
